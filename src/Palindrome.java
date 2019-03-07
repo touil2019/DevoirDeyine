@@ -4,18 +4,20 @@ public class Palindrome {
 
     public static void main(String[] args){
 
-String mot1="pirates";
-StringBuffer mot2= new StringBuffer(mot1);
-mot2.reverse();
+        String mot1= "laval";
 
-        System.out.println(mot1);
-        System.out.println(mot2);
+        StringBuffer mot2= new StringBuffer(mot1).reverse();
 
-        if (mot1.equals(mot2)){
-            System.out.println("ce mot est un palindrome");
+        String resultat = new String(mot2);
+
+        if (mot1.equals(resultat)){
+
+            System.out.println("c'est un palindrome");
         }
         else{
-            System.out.println("ce mot n'est pas un palindrome");
+            System.out.println("ce n'est pas un palindrome");
         }
+
+
     }
 }
